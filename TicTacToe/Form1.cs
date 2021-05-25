@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Form1 : Form
+    public partial class TicTacToe : Form
     {
-        public Form1()
+        public TicTacToe()
         {
             InitializeComponent();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
