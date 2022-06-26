@@ -24,61 +24,118 @@ namespace TicTacToe
 
         private void btn_Click(object sender, EventArgs e)
         {
+            movement++;
             Button bt = sender as Button;
             bt.Enabled = false;
-            bt.BackColor = Color.Olive;
+            bt.BackColor = Color.Gold;
             TableLayoutPanelCellPosition pos = tblPanel.GetPositionFromControl(bt);
-            if (isXTurn) {
+            if (isXTurn)
+            {
                 bt.Text = "X";
                 array[pos.Row, pos.Column] = 1;
             }
-            else {
+            else
+            {
                 bt.Text = "O";
                 array[pos.Row, pos.Column] = 2;
             }
 
-            bool gamefinished = GameFinished(pos, isXTurn == true?1:2);
+            CheckGameState(pos);
+        }
+
+        private void CheckGameState(TableLayoutPanelCellPosition pos)
+        {
+            if (GameFinished(pos, 1))
+            {
+                MessageBox.Show("Game is finished. " + "X" + " is the winner!");
+                Close();
+            }
+            else if (GameFinished(pos, 2))
+            {
+                MessageBox.Show("Game is finished. " +  "O" + " is the winner!");
+                Close();
+            }
+            else if (movement == 9)
+            {
+                MessageBox.Show("Draw!");
+                Close();
+            }
+
             isXTurn = !isXTurn;
         }
 
         private void NewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Restart();
+            Environment.Exit(0);
         }
 
         private void InfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Tic Tac toe");
         }
 
-        private Boolean GameFinished(TableLayoutPanelCellPosition pos, int type)
+        private bool GameFinished(TableLayoutPanelCellPosition pos, int type)
         {
-            bool column = false;
-            bool row = false;
-            bool diagonals = false; 
+            bool column = true;
+            bool row = true;
+            bool diagonals = true;
+            bool bDiagonals = true;
 
+            //check cols
             for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < size; j++)
-                {
-                    if (array[j,i] != type)
-                        column = false;
-                    if (array[i, j] != type)
-                        row = false;
-                    if (i == j && array[i, j] == type)
-                        diagonals = false;
+                if (array[pos.Row, i] != type) {
+                    column = false;
+                    break;
+                }                
+            }
+
+            //check rows
+            for (int i = 0; i < size; i++)
+            {
+                if (array[i, pos.Column] != type) {
+                    row = false;
+                    break;
                 }
             }
 
-            return diagonals || column || row;
-            //for (int i = 0; i < size; i++)
-            //{
-            //    for (int j = 0; j < size; j++)
-            //    {
-            //        if (array[i, j] != type)
-            //            break;
-            //    }
-            //}
+            //check diag
+            if (pos.Column == pos.Row)
+            {
+                //we're on a diagonal
+                for (int i = 0; i < size; i++)
+                {
+                    if (array[i, i] != type)
+                    {
+                        diagonals = false;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                diagonals = false;
+            }
+
+            //check anti diag
+            if (pos.Column + pos.Row == size - 1)
+            {
+                for (int i = 0; i < size; i++)
+                {
+                    if (array[i, (size - 1) - i] != type)
+                    {
+                        bDiagonals = false;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                bDiagonals = false;
+            }
+
+            return diagonals || column || row || bDiagonals;
         }
     }
 }
