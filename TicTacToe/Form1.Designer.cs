@@ -52,8 +52,8 @@
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1368, 27);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(16, 5, 0, 5);
+            this.menuStrip1.Size = new System.Drawing.Size(1824, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,26 +88,27 @@
             this.tblPanel.Controls.Add(this.btn2, 1, 0);
             this.tblPanel.Controls.Add(this.btn1, 0, 0);
             this.tblPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblPanel.Location = new System.Drawing.Point(0, 27);
-            this.tblPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.tblPanel.Location = new System.Drawing.Point(0, 29);
+            this.tblPanel.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tblPanel.Name = "tblPanel";
             this.tblPanel.RowCount = 3;
             this.tblPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblPanel.Size = new System.Drawing.Size(1368, 1244);
+            this.tblPanel.Size = new System.Drawing.Size(1824, 1392);
             this.tblPanel.TabIndex = 1;
             // 
             // btn9
             // 
             this.btn9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn9.FlatAppearance.BorderSize = 2;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(918, 834);
-            this.btn9.Margin = new System.Windows.Forms.Padding(6);
+            this.btn9.Location = new System.Drawing.Point(1224, 935);
+            this.btn9.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(444, 404);
+            this.btn9.Size = new System.Drawing.Size(592, 450);
             this.btn9.TabIndex = 8;
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btn_Click);
@@ -115,13 +116,14 @@
             // btn8
             // 
             this.btn8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn8.FlatAppearance.BorderSize = 2;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(462, 834);
-            this.btn8.Margin = new System.Windows.Forms.Padding(6);
+            this.btn8.Location = new System.Drawing.Point(616, 935);
+            this.btn8.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(444, 404);
+            this.btn8.Size = new System.Drawing.Size(592, 450);
             this.btn8.TabIndex = 7;
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.Click += new System.EventHandler(this.btn_Click);
@@ -129,13 +131,14 @@
             // btn7
             // 
             this.btn7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn7.FlatAppearance.BorderSize = 2;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(6, 834);
-            this.btn7.Margin = new System.Windows.Forms.Padding(6);
+            this.btn7.Location = new System.Drawing.Point(8, 935);
+            this.btn7.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(444, 404);
+            this.btn7.Size = new System.Drawing.Size(592, 450);
             this.btn7.TabIndex = 6;
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn_Click);
@@ -143,13 +146,14 @@
             // btn6
             // 
             this.btn6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn6.FlatAppearance.BorderSize = 2;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(918, 420);
-            this.btn6.Margin = new System.Windows.Forms.Padding(6);
+            this.btn6.Location = new System.Drawing.Point(1224, 471);
+            this.btn6.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(444, 402);
+            this.btn6.Size = new System.Drawing.Size(592, 450);
             this.btn6.TabIndex = 5;
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btn_Click);
@@ -157,13 +161,14 @@
             // btn5
             // 
             this.btn5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn5.FlatAppearance.BorderSize = 2;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(462, 420);
-            this.btn5.Margin = new System.Windows.Forms.Padding(6);
+            this.btn5.Location = new System.Drawing.Point(616, 471);
+            this.btn5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(444, 402);
+            this.btn5.Size = new System.Drawing.Size(592, 450);
             this.btn5.TabIndex = 4;
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.Click += new System.EventHandler(this.btn_Click);
@@ -171,13 +176,14 @@
             // btn4
             // 
             this.btn4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn4.FlatAppearance.BorderSize = 2;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(6, 420);
-            this.btn4.Margin = new System.Windows.Forms.Padding(6);
+            this.btn4.Location = new System.Drawing.Point(8, 471);
+            this.btn4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(444, 402);
+            this.btn4.Size = new System.Drawing.Size(592, 450);
             this.btn4.TabIndex = 3;
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn_Click);
@@ -185,13 +191,14 @@
             // btn3
             // 
             this.btn3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn3.FlatAppearance.BorderSize = 2;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(918, 6);
-            this.btn3.Margin = new System.Windows.Forms.Padding(6);
+            this.btn3.Location = new System.Drawing.Point(1224, 7);
+            this.btn3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(444, 402);
+            this.btn3.Size = new System.Drawing.Size(592, 450);
             this.btn3.TabIndex = 2;
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn_Click);
@@ -199,13 +206,14 @@
             // btn2
             // 
             this.btn2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn2.FlatAppearance.BorderSize = 2;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(462, 6);
-            this.btn2.Margin = new System.Windows.Forms.Padding(6);
+            this.btn2.Location = new System.Drawing.Point(616, 7);
+            this.btn2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(444, 402);
+            this.btn2.Size = new System.Drawing.Size(592, 450);
             this.btn2.TabIndex = 1;
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn_Click);
@@ -213,28 +221,30 @@
             // btn1
             // 
             this.btn1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.btn1.FlatAppearance.BorderSize = 2;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(6, 6);
-            this.btn1.Margin = new System.Windows.Forms.Padding(6);
+            this.btn1.Location = new System.Drawing.Point(8, 7);
+            this.btn1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(444, 402);
+            this.btn1.Size = new System.Drawing.Size(592, 450);
             this.btn1.TabIndex = 0;
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn_Click);
             // 
             // TicTacToe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 1271);
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ClientSize = new System.Drawing.Size(1824, 1421);
             this.Controls.Add(this.tblPanel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.MaximumSize = new System.Drawing.Size(1984, 1887);
-            this.MinimumSize = new System.Drawing.Size(684, 926);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.MaximumSize = new System.Drawing.Size(2640, 2331);
+            this.MinimumSize = new System.Drawing.Size(907, 1139);
             this.Name = "TicTacToe";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

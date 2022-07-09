@@ -31,16 +31,24 @@ namespace TicTacToe
             movement++;
             Button bt = sender as Button;
             bt.Enabled = false;
-            bt.BackColor = Color.Gold;
+            bt.BackColor = Color.Beige;
             TableLayoutPanelCellPosition pos = tblPanel.GetPositionFromControl(bt);
 
             bt.Text = "O";
             array[pos.Column, pos.Row] = 2;
 
-            // AI turn
-            TableLayoutPanelCellPosition pos2 = PlayAI();
+            if (movement < size * size)
+            {
+                // AI turn
+                TableLayoutPanelCellPosition pos2 = PlayAI();
+                CheckGameState(pos, pos2);
+            }
+            else
+            {
+                MessageBox.Show("Draw!");
+                tblPanel.Enabled = false;
+            }
 
-            CheckGameState(pos, pos2);
         }
 
         private TableLayoutPanelCellPosition PlayAI()
@@ -51,7 +59,7 @@ namespace TicTacToe
             Button btnX = tblPanel.GetControlFromPosition(moveStruct.col, moveStruct.row) as Button;
             btnX.Text = "X";
             btnX.Enabled = false;
-            btnX.BackColor = Color.Gold;
+            btnX.BackColor = Color.AliceBlue;
             TableLayoutPanelCellPosition pos = tblPanel.GetPositionFromControl(btnX);
             return pos;
         }
@@ -70,7 +78,7 @@ namespace TicTacToe
                 tblPanel.Enabled = false;
                 //Close();
             }
-            if (movement == 9)
+            if (movement == size * size)
             {
                 MessageBox.Show("Draw!");
                 tblPanel.Enabled = false;
